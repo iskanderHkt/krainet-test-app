@@ -48,14 +48,15 @@
   line-height: 1.3rem;
   margin-bottom: 1.25rem;
 }
-.contacts__right-block__socials__icons img {
+.contacts__right-block__socials__icons a img {
   width: 30px;
   height: 30px;
   margin-right: 1.5rem;
   cursor: pointer;
-}
-.contacts__right-block__socials__icons img:nth-child(1) {
   rotate: 90deg;
+}
+.contacts__right-block__socials__icons a:nth-child(2) img {
+  rotate: 0deg;
 }
 .contacts__right-block__form-title {
   font-family: sans-serif;
