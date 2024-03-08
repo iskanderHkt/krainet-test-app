@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+.useful {
+    width: 100%;
+    padding: 7.5rem 3.125rem;
+
+    &__title-section {
+        text-align: center;
+        position: relative;
+        margin-bottom: 5.3rem;
+
+        & h2 {
+            font-size: 2.25rem;
+        }
+
+        &::before {
+            content: "Опыт";
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            font-family: 'Poppins', sans-serif;
+            translate: -1rem -3rem;
+            font-size: 1rem;
+            font-weight: 700;
+            background-color: #FFA501;
+            border-radius: 50%;
+            padding-top: 8px;
+            padding-right: 8px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #FFA501;
+            translate: -1.5rem 1.5rem;
+        }
+    }
+
+    &__bottom-section {
+        height: 23.625rem;
+        display: flex;
+        justify-content: space-between;
+
+        &__block {
+            border-left: 1px solid black;
+
+            &__title {
+                font-size: 1.25rem;
+                padding-left: 2.5rem;
+
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    translate: -3.3rem 0rem;
+                    background-color: #FFA501;
+                    border-radius: 50%;
+
+                }
+            }
+        }
+
+        &__elem {
+
+            width: 23.4rem;
+            padding-left: 2.5rem;
+            margin-top: 2.8rem;
+
+            &__top-block {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+                margin-bottom: 0.75rem;
+
+                &__icon {
+                    background-color: #FFA501;
+                    width: 36px;
+                    height: 36px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 2.6rem;
+                        height: 1px;
+                        translate: -2.4rem 0rem;
+                        background-color: black;
+                    }
+                }
+
+                & .font-b {
+                    font-size: 0.9rem;
+                }
+
+                & .font-m {
+                    font-size: 0.75rem;
+                }
+            }
+
+            &__bottom-block {
+                & p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .useful {
+        padding: 7.5rem 1.125rem 0;
+        min-height: 1039px;
+        margin-bottom: 2.5rem;
+
+        &__title-section {
+            margin-bottom: 3.5rem;
+
+            & h2 {
+                font-size: 1.5rem;
+            }
+
+            &::after {
+                translate: -1.5rem 0.5rem;
+            }
+        }
+
+        &__bottom-section {
+            min-height: 25rem;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+
+
+
+            &__elem {
+                max-width: 18.75rem;
+                width: 100%;
+
+                &__top-block {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.25rem;
+                    margin-bottom: 0.75rem;
+
+                }
+
+                &__bottom-block {
+                    & p {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

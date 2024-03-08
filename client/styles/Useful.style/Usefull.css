@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+.useful {
+  width: 100%;
+  padding: 7.5rem 3.125rem;
+}
+.useful__title-section {
+  text-align: center;
+  position: relative;
+  margin-bottom: 5.3rem;
+}
+.useful__title-section h2 {
+  font-size: 2.25rem;
+}
+.useful__title-section::before {
+  content: "Опыт";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  font-family: "Poppins", sans-serif;
+  translate: -1rem -3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #FFA501;
+  border-radius: 50%;
+  padding-top: 8px;
+  padding-right: 8px;
+}
+.useful__title-section::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #FFA501;
+  translate: -1.5rem 1.5rem;
+}
+.useful__bottom-section {
+  height: 23.625rem;
+  display: flex;
+  justify-content: space-between;
+}
+.useful__bottom-section__block {
+  border-left: 1px solid black;
+}
+.useful__bottom-section__block__title {
+  font-size: 1.25rem;
+  padding-left: 2.5rem;
+}
+.useful__bottom-section__block__title::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  translate: -3.3rem 0rem;
+  background-color: #FFA501;
+  border-radius: 50%;
+}
+.useful__bottom-section__elem {
+  width: 23.4rem;
+  padding-left: 2.5rem;
+  margin-top: 2.8rem;
+}
+.useful__bottom-section__elem__top-block {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.useful__bottom-section__elem__top-block__icon {
+  background-color: #FFA501;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.useful__bottom-section__elem__top-block__icon::before {
+  content: "";
+  position: absolute;
+  width: 2.6rem;
+  height: 1px;
+  translate: -2.4rem 0rem;
+  background-color: black;
+}
+.useful__bottom-section__elem__top-block .font-b {
+  font-size: 0.9rem;
+}
+.useful__bottom-section__elem__top-block .font-m {
+  font-size: 0.75rem;
+}
+.useful__bottom-section__elem__bottom-block p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 640px) {
+  .useful {
+    padding: 7.5rem 1.125rem 0;
+    min-height: 1039px;
+    margin-bottom: 2.5rem;
+  }
+  .useful__title-section {
+    margin-bottom: 3.5rem;
+  }
+  .useful__title-section h2 {
+    font-size: 1.5rem;
+  }
+  .useful__title-section::after {
+    translate: -1.5rem 0.5rem;
+  }
+  .useful__bottom-section {
+    min-height: 25rem;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .useful__bottom-section__elem {
+    max-width: 18.75rem;
+    width: 100%;
+  }
+  .useful__bottom-section__elem__top-block {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .useful__bottom-section__elem__bottom-block p {
+    font-size: 0.75rem;
+  }
+}/*# sourceMappingURL=Usefull.css.map */
