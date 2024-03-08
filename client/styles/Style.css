@@ -25,7 +25,7 @@
   height: auto;
   position: relative;
   margin: 0 auto;
-  background-image: url("/test-app/img/Background.svg");
+  background-image: url("../img/Background.svg");
   background-repeat: no-repeat;
 }
 
